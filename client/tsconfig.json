@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "skipLibCheck": true,
+
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["/*"],
+      "@env/*": ["env/*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@store/*": ["store/*"],
+      "@pages/*": ["pages/*"],
+      "@http/*": ["http/*"],
+      "@services/*": ["services/*"],
+      "@models/*": ["models/*"],
+      "@router/*": ["router/*"],
+      "@helpers/*": ["helpers/*"],
+      "@consts/*": ["consts/*"],
+      "@assets/*": ["assets/*"],
+    },
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Other */
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": ["src", "vite.config.ts"],
+  // "references": [{ "path": "./tsconfig.node.json" }]
+}
